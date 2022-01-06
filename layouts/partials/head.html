@@ -4,6 +4,8 @@
 
   <link rel="icon" href="{{ if (isset .Site.Params "favicon") }}{{ .Site.Params.favicon }}{{ else }}/favicon.ico{{ end }}">
 
+  <script defer data-domain="blog.remotohoy.com" src="https://plausible.io/js/plausible.js"></script>
+
   <title>
     {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}
   </title>
